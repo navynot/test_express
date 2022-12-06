@@ -44,7 +44,7 @@ const bookController = {
         const book = await bookModel.findOneAndDelete({_id});
         const parsedBook = JSON.parse(book);
 
-        res.locals.book = book;
+        res.locals.book = parsedBook;
         return next();
     }
 }
