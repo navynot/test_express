@@ -1,0 +1,1 @@
+{"serverPath":"./server/server.ts","routesPath":"./server/routes","filePaths":["./server/routes/booksRouter.js"],"endpoints":{"GET":[{"path":"/books"},{"path":"/books/:id"}],"POST":[{"path":"/books/create","body":{}}],"PUT":[],"DELETE":[{"path":"/books/:id"}],"PATCH":[{"path":"/books/:_id","body":{}}]}}

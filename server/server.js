@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
-app.use('/books', booksRouter);
+app.use('/', booksRouter);
 
 app.listen(3000);
 

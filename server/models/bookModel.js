@@ -2,6 +2,8 @@ const mongoose = require('mongoose');
 
 const URI = 'mongodb+srv://navynot:soloproject@cluster0.qc8zsms.mongodb.net/?retryWrites=true&w=majority';
 
+mongoose.set('strictQuery', false);
+
 mongoose.connect(URI, {
     useNewURLParser: true,
     useUnifiedTopology: true,
