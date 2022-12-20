@@ -6,7 +6,10 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
-app.use('/', booksRouter);
+app.get('/', (req, res, next)=> {
+    res.status(200).send("Hello Express");
+})
+app.use('/books', booksRouter);
 
 app.listen(3000);
 
